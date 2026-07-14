@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC静态网页</title>
+    <!-- 引入MC风格像素字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D 环形轮播区 -->
+    <section class="carousel-3d">
+        <!-- 中心双人物模型组 -->
+        <!-- 左侧标题 -->
+        <div class="center-duo">
+            <div class="side-title left-title">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lin__nil&nbsp;&nbsp;&nbsp;</h2> <!-- 这里写左边的字 -->
+            </div>
+        <!-- 中心双人物模型组 -->
+            <div class="char-group">
+                <div class="char-slot left-char">
+                    <img src="./image/lin__nil.png" alt="lin__nil">
+                </div>
+                <div class="char-slot right-char">
+                    <img src="./image/qiyuemengchuan.png" alt="qiyuemengchuan">
+                </div>
+            </div>
+        <!-- 右侧标题 -->
+            <div class="side-title right-title">
+                <h2>&nbsp;&nbsp;&nbsp;qiyuemengchuan</h2> <!-- 这里写右边的字 -->
+            </div>
+        </div>
+
+        <!-- 3D 环形轨道 -->
+        <div class="carousel-track" id="carouselTrack">
+            <div class="track-item" style="--i:0"><img src="./image/钟楼全景.png" alt="风景1"></div>
+            <div class="track-item" style="--i:1"><img src="./image/钟楼全景2.png" alt="风景2"></div>
+            <div class="track-item" style="--i:2"><img src="./image/钟楼全景3.png" alt="风景3"></div>
+            <div class="track-item" style="--i:3"><img src="./image/风景4.jpg" alt="风景4"></div>
+            <div class="track-item" style="--i:4"><img src="./image/风景5.jpg" alt="风景5"></div>
+            <div class="track-item" style="--i:5"><img src="./image/风景6.png" alt="风景6"></div>
+        </div>
+
+        <!-- 左右控制按钮 (移除了 onclick) -->
+        <button class="carousel-btn prev" id="prevBtn">‹</button>
+        <button class="carousel-btn next" id="nextBtn">›</button>
+    </section>
+
+    <!-- 2. 存档内容展示区 -->
+    <section class="content">
+        <h1 class="mc-title">简介描述</h1>
+        <p class="mc-desc">此乃lin__nil和qiyuemengchuan游玩记录❤️👍
+        </p>
+        <div class="card-grid">
+            <!-- 存档卡片内容保持不变 -->
+            <div class="mc-card">
+                <img src="https://picsum.photos/300/200?random=10" alt="存档封面">
+                <div class="card-info">
+                    <h3>蜂蜂工厂(BeebeeblockTheSkyhive_v2.06.1_cf_release)</h3>
+                    <p class="version">版本: 正式版 1.21.1 NeoForge 21.1.228 | 生存模式</p>
+                    <p class="desc">随便玩玩，我也不知道怎么介绍（doge），此处省略一千万字………………</p>
+                </div>
+            </div>
+            <!-- 其他卡片... -->
+        </div>
+    </section>
+    <div style="
+      background: #f1f1f1;
+      text-align: center;
+      padding: 40px;
+      font-size: 12px;
+      ">
+      <a href="https://www.baidu.com">由lin__nil制作，点我进入百度💖</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
